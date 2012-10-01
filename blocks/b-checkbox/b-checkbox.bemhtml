@@ -1,0 +1,11 @@
+block b-checkbox {
+	tag: 'input',
+	attrs: {
+		type: 'checkbox'
+	}
+}
+block b-checkbox, mod checked yes {
+    attrs: {
+        checked: 'checked'
+    }
+}

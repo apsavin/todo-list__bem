@@ -1,0 +1,17 @@
+block b-todoapp, elem counter {
+
+	content: {
+        return [
+            {
+                elem: 'count',
+                content: this.ctx.content || '0',
+                tag: 'span'
+            },
+            {
+                elem: 'count-label',
+                content: ' items left',
+                tag: 'span'
+            }
+        ]
+	}
+}

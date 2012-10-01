@@ -1,0 +1,14 @@
+.b-menu-horiz__layout-unit
+{
+	float:left;
+}
+
+.b-menu-horiz__item_state_current{
+	background: yellow;
+}
+
+.b-menu-horiz__item{
+	padding: 0 5px;
+	cursor: pointer;
+}
+

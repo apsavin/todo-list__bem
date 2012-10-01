@@ -1,0 +1,21 @@
+.b-todo
+{
+    list-style: none;
+    margin: 5px 0;
+}
+
+.b-todo_complete_yes .b-todo__label{
+    text-decoration: line-through;
+}
+
+.b-todo__edit-field_visible_no{
+    display: none;
+}
+
+.b-todo_visible_no, .b-todo__label_visible_no{
+    display: none;
+}
+
+.b-todo__delete{
+    float: right;
+}

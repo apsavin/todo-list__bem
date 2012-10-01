@@ -1,0 +1,7 @@
+block b-button {
+    tag: 'input',
+    attrs: {
+        type: 'button',
+        value: this.ctx.content
+    }
+}

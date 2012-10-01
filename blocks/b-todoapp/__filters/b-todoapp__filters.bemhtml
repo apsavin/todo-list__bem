@@ -1,0 +1,43 @@
+block b-todoapp, elem filters {
+	tag: '',
+	content:{
+			block: 'b-menu-horiz',
+			mix: [{block: 'b-todoapp', elem:'filters'}],
+			mods: { layout: 'normal'},
+			js: true,
+			title: {elem: 'title', content: 'filters'},
+			content: [
+				{
+					elem: 'item',
+					elemMods: {state: 'current'},
+					content: {
+						block: 'b-link',
+						mods: {pseudo: 'yes'},
+						mix: [{block: 'b-menu-horiz', elem: 'item-selector'}],
+						url: '/',
+						content: 'All'
+					}
+				},
+				{
+					elem: 'item',
+					content: {
+						block: 'b-link',
+						mods: {pseudo: 'yes'},
+						mix: [{block: 'b-menu-horiz', elem: 'item-selector'}],
+						url: '/',
+						content: 'Active'
+					}
+				},
+				{
+					elem: 'item',
+					content: {
+						block: 'b-link',
+						mods: {pseudo: 'yes'},
+						mix: [{block: 'b-menu-horiz', elem: 'item-selector'}],
+						url: '/',
+						content: 'Complete'
+					}
+				}
+			]
+		}
+}

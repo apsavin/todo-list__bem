@@ -1,0 +1,6 @@
+block b-text-input {
+	tag: 'input',
+	attrs: {
+		type: 'text'
+	}
+}

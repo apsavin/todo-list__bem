@@ -1,0 +1,48 @@
+block b-todo {
+    tag: 'li',
+    content:{
+        return [
+        {
+            block: 'b-checkbox',
+            mods: {checked: 'no'},
+            mix: [{block: 'b-todo', elem: 'complete'}],
+            js: true,
+            attrs: {
+                title: 'Mark as complete'
+            }
+        },
+        {
+            block: 'b-text-input',
+            mix: [{block: 'b-todo', elem: 'edit-field', mods: {visible: 'no'}}],
+            js: true,
+            attrs: {
+                placeholder: this.ctx.content,
+                value: this.ctx.content
+            }
+        },
+        {
+            elem: 'label',
+            content: this.ctx.content
+        },
+        {
+            block: 'b-button',
+            mix: [{block: 'b-todo', elem: 'delete'}],
+            js: true,
+            content: 'x'
+        }
+    ]}
+
+    elem label {
+        tag: '',
+        content: {
+            return {
+                block: 'b-link',
+                mix: [{block: 'b-todo', elem: 'label'}],
+                js: true,
+                href: '/',
+                mods:{pseudo: 'yes'},
+                content: this.ctx.content
+            }
+        }
+    }
+}

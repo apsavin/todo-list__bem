@@ -1,0 +1,9 @@
+*.idea
+.bem/cache/
+node_modules/
+libs/
+pages/*/*.css
+pages/*/*.js
+!pages/*/*.bemjson.js
+pages/*/*.html
+!level.js

@@ -1,0 +1,64 @@
+block b-todoapp {
+
+	tag: 'section',
+
+	js: true,
+
+	content: [
+		{
+			elem: 'header',
+			content: [
+				{
+					elem: 'toggle-all'
+				},
+				{
+					elem: 'add-todo'
+				}
+			]
+		},
+		{
+			elem: 'list'
+		},
+		{
+			elem: 'control-panel',
+			content: [
+				{
+					elem: 'counter'
+				},
+				{
+					elem: 'filters'
+				}
+			]
+		}
+	]
+
+	elem header, tag: 'header'
+
+	elem toggle-all {
+		tag: '',
+		content: {
+			block: 'b-checkbox',
+			js: true, 
+			mix: [{block: 'b-todoapp', elem: 'toggle-all'}],
+			attrs: {
+				title: 'Mark all as complete'
+			}
+		}
+	}
+
+	elem add-todo {
+		tag: '',
+		content: {
+			block: 'b-text-input',
+			js: true, 
+			mix: [{block: 'b-todoapp', elem: 'add-todo'}],
+			attrs: {
+				placeholder: 'What needs to be done?'
+			}
+		}
+	}
+	
+	elem list, tag: 'ul'
+
+	elem control-panel, tag: 'footer'
+}
