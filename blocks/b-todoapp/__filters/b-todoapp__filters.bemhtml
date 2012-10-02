@@ -2,7 +2,7 @@ block b-todoapp, elem filters {
 	tag: '',
 	content:{
 			block: 'b-menu-horiz',
-			mix: [{block: 'b-todoapp', elem:'filters'}],
+			mix: {block: 'b-todoapp', elem:'filters'},
 			mods: { layout: 'normal'},
 			js: true,
 			title: {elem: 'title', content: 'filters'},
@@ -13,7 +13,7 @@ block b-todoapp, elem filters {
 					content: {
 						block: 'b-link',
 						mods: {pseudo: 'yes'},
-						mix: [{block: 'b-menu-horiz', elem: 'item-selector'}],
+						mix: {block: 'b-menu-horiz', elem: 'item-selector'},
 						url: '/',
 						content: 'All'
 					}
@@ -23,7 +23,7 @@ block b-todoapp, elem filters {
 					content: {
 						block: 'b-link',
 						mods: {pseudo: 'yes'},
-						mix: [{block: 'b-menu-horiz', elem: 'item-selector'}],
+						mix: {block: 'b-menu-horiz', elem: 'item-selector'},
 						url: '/',
 						content: 'Active'
 					}
@@ -33,7 +33,7 @@ block b-todoapp, elem filters {
 					content: {
 						block: 'b-link',
 						mods: {pseudo: 'yes'},
-						mix: [{block: 'b-menu-horiz', elem: 'item-selector'}],
+						mix: {block: 'b-menu-horiz', elem: 'item-selector'},
 						url: '/',
 						content: 'Complete'
 					}

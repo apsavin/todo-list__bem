@@ -5,7 +5,7 @@ block b-todo {
         {
             block: 'b-checkbox',
             mods: {checked: 'no'},
-            mix: [{block: 'b-todo', elem: 'complete'}],
+            mix: {block: 'b-todo', elem: 'complete'},
             js: true,
             attrs: {
                 title: 'Mark as complete'
@@ -13,7 +13,7 @@ block b-todo {
         },
         {
             block: 'b-text-input',
-            mix: [{block: 'b-todo', elem: 'edit-field', mods: {visible: 'no'}}],
+            mix: {block: 'b-todo', elem: 'edit-field', mods: {visible: 'no'}},
             js: true,
             attrs: {
                 placeholder: this.ctx.content,
@@ -26,7 +26,7 @@ block b-todo {
         },
         {
             block: 'b-button',
-            mix: [{block: 'b-todo', elem: 'delete'}],
+            mix: {block: 'b-todo', elem: 'delete'},
             js: true,
             content: 'x'
         }
@@ -37,10 +37,10 @@ block b-todo {
         content: {
             return {
                 block: 'b-link',
-                mix: [{block: 'b-todo', elem: 'label'}],
+                mix: {block: 'b-todo', elem: 'label'},
                 js: true,
                 href: '/',
-                mods:{pseudo: 'yes'},
+                mods: {pseudo: 'yes'},
                 content: this.ctx.content
             }
         }

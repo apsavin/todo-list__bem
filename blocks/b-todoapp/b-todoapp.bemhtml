@@ -39,7 +39,7 @@ block b-todoapp {
 		content: {
 			block: 'b-checkbox',
 			js: true, 
-			mix: [{block: 'b-todoapp', elem: 'toggle-all'}],
+			mix: {block: 'b-todoapp', elem: 'toggle-all'},
 			attrs: {
 				title: 'Mark all as complete'
 			}
@@ -51,7 +51,7 @@ block b-todoapp {
 		content: {
 			block: 'b-text-input',
 			js: true, 
-			mix: [{block: 'b-todoapp', elem: 'add-todo'}],
+			mix: {block: 'b-todoapp', elem: 'add-todo'},
 			attrs: {
 				placeholder: 'What needs to be done?'
 			}
