@@ -1,5 +1,6 @@
 block b-todo {
     tag: 'li',
+    js: true,
     content:{
         return [
         {

@@ -79,6 +79,8 @@
                 this.input.focus();
                 this.setMod(this.elem('label'), 'visible', 'no');
             });
+            this.liveInitOnBlockInsideEvent('init', 'b-checkbox');
+            this.liveInitOnBlockInsideEvent('init', 'b-button');
         }
 
     });

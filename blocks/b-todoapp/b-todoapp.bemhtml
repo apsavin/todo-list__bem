@@ -25,7 +25,8 @@ block b-todoapp {
                 elem: 'control-panel',
                 content: [
                     {
-                        elem: 'counter'
+                        elem: 'counter',
+                        content: this.ctx.content.length
                     },
                     {
                         elem: 'filters'
