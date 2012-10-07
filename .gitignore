@@ -5,5 +5,7 @@ libs/
 pages/*/*.css
 pages/*/*.js
 !pages/*/*.bemjson.js
+!pages/*/*.server.js
+!pages/*/*.node.js
 pages/*/*.html
 !level.js

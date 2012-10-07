@@ -19,7 +19,11 @@
             ]
         },
         {
-            block: 'b-todoapp'
+            block: 'b-todoapp',
+            content: [{
+                block: 'b-todo',
+                content: 'sadfdsf'
+            }]
         }
     ]
 })

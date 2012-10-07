@@ -10,3 +10,20 @@ MAKE.decl('Arch', {
 
 });
 
+MAKE.decl('BundleNode', {
+
+    getTechs: function() {
+
+        return [
+            'bemjson.js',
+            'bemdecl.js',
+            'deps.js',
+            'bemhtml',
+            'css',
+            'js',
+            'html',
+            'priv.js'
+        ];
+    }
+
+});

@@ -4,33 +4,36 @@ block b-todoapp {
 
 	js: true,
 
-	content: [
-		{
-			elem: 'header',
-			content: [
-				{
-					elem: 'toggle-all'
-				},
-				{
-					elem: 'add-todo'
-				}
-			]
-		},
-		{
-			elem: 'list'
-		},
-		{
-			elem: 'control-panel',
-			content: [
-				{
-					elem: 'counter'
-				},
-				{
-					elem: 'filters'
-				}
-			]
-		}
-	]
+	content: {
+	return [
+            {
+                elem: 'header',
+                content: [
+                    {
+                        elem: 'toggle-all'
+                    },
+                    {
+                        elem: 'add-todo'
+                    }
+                ]
+            },
+            {
+                elem: 'list',
+                content: this.ctx.content
+            },
+            {
+                elem: 'control-panel',
+                content: [
+                    {
+                        elem: 'counter'
+                    },
+                    {
+                        elem: 'filters'
+                    }
+                ]
+            }
+        ];
+	}
 
 	elem header, tag: 'header'
 
@@ -57,7 +60,7 @@ block b-todoapp {
 			}
 		}
 	}
-	
+
 	elem list, tag: 'ul'
 
 	elem control-panel, tag: 'footer'
