@@ -1,6 +1,5 @@
-var blocks = require('./_todo-list.priv.js');
 
-exports.PRIV = function (data) {
+exports['b-page'] = function (data) {
     return {
         block: 'b-page',
         title: 'Todo-list__bem',
@@ -21,7 +20,7 @@ exports.PRIV = function (data) {
                     }
                 ]
             },
-            blocks['b-todoapp'](data)
+            exports['b-todoapp'](data)
         ]
     }
 };

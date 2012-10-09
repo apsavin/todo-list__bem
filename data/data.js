@@ -4,5 +4,8 @@ exports.data = [
     },
     {
         label: 'and something else'
+    },
+    {
+        label: 'rwwerwerwer'
     }
 ];

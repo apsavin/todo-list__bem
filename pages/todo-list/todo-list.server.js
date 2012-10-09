@@ -2,7 +2,7 @@ var http = require('http'),
     url = require('url'),
     fs = require('fs'),
     path = require('path'),
-    PRIV = require('./todo-list.node.js').PRIV,
+    PRIV = require('./_todo-list.priv.js')['b-page'],
     BEMHTML = require('./_todo-list.bemhtml.js').BEMHTML,
     DATA = require('./../../data/data').data;
 
