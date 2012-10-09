@@ -9,8 +9,8 @@
 
             'js': function () {
                 var _this = this;
-                this.todos = [];
-                this.uncompleteItemsCount = 0;
+                this.todos = this.findBlocksInside('list', 'b-todo') || [];
+                this.uncompleteItemsCount = this.todos.length;
                 this.findBlockOn('add-todo', 'b-text-input').on('keyup:enter', function () {
                     _this.addItem(this.value());
                     this.value('');
