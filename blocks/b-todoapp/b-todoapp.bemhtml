@@ -26,7 +26,7 @@ block b-todoapp {
                 content: [
                     {
                         elem: 'counter',
-                        content: this.ctx.content.length
+                        content: this.ctx.content ? this.ctx.content.length : 0
                     },
                     {
                         elem: 'filters'
