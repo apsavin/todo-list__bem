@@ -9,7 +9,8 @@
     "bem": "~0.5.14",
     "ometajs": "~2.1.10",
     "xjst": "0.2.21",
-    "dom-js": "*"
+    "dom-js": "*",
+    "q": "~0.8.9"
   },
   "devDependencies": {},
   "optionalDependencies": {},
