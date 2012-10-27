@@ -6,4 +6,5 @@ pages/*/*.css
 pages/*/*.js
 !pages/*/*.bemjson.js
 pages/*/*.html
+tests/*
 !level.js
