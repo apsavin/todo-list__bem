@@ -11,7 +11,7 @@ exports.getTechs = function () {
         'js': 'js-i',
         'tests.js': PATH.join(BEM_TEST_TECHS, 'tests.js'),
         'test.js': PATH.join(BEM_TEST_TECHS, 'test.js'),
-        'bemhtml.js': PATH.join(BEM_TECHS, 'bemhtml.js'),
+        'bemhtml': PATH.join(BEM_TECHS, 'bemhtml.js'),
         'html': PATH.join(BEM_TECHS, 'html.js')
     };
 
