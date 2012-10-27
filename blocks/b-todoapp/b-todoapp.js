@@ -126,7 +126,6 @@
                 content: content
             }));
             this.elem('list').prepend($item);
-            var _this = this;
             var todo = this.findBlockOn($item, 'b-todo');
             this.todos.push(todo);
             this.uncompleteItemsCount++;

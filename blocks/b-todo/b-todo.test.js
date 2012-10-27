@@ -1,14 +1,11 @@
 BEM.TEST.decl({'block': 'b-todo'}, function () {
     var block;
-
     beforeEach(function () {
         block = jQuery(
-            BEMHTML.apply([
-                {
-                    block: 'b-link',
-                    content: 'deal'
-                }
-            ])
+            BEMHTML.apply({
+                block: 'b-todo',
+                content: 'deal'
+            })
         ).bem('b-todo');
     });
 
@@ -16,13 +13,9 @@ BEM.TEST.decl({'block': 'b-todo'}, function () {
         block.destruct();
     });
 
-    it('triggers complete when complete', function () {
-        var completed = false;
-        block.on('complete', function () {
-            completed = true;
-        });
-        block.setMod('complete', 'yes');
-        expect(completed).toBeTruthy();
+    it('have mod complete in yes state after complete method', function () {
+        block.complete();
+        expect(block.getMod('complete')).toEqual('yes');
     });
 
 });

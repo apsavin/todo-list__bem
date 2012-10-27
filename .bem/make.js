@@ -70,12 +70,6 @@ MAKE.decl('BundleNode', {
 
         var arr = this.__base();
 
-        // remove js tech
-        arr.splice(arr.indexOf('js'), 1);
-
-        // remove html tech
-        arr.splice(arr.indexOf('html'), 1);
-
         if (this.getLevelPath() === 'tests') {
             arr.push('test.js');
         }
